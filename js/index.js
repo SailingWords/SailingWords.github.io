@@ -17,14 +17,13 @@ tim.index.ready = function() {
                     $header
                     .removeClass('zoomed')
                     ;
-                }, 20000);
+                }, 14000);
                 
                 $ui.typed({
                     replaceBaseText : true,
                     strings         : [
                         "Silence is the power of gods.",
                         "Words are ours.",
-                        "Words, they're innocent, neutral, precise.",
                         "Words can build bridges across darkness and chaos.",
                         "<b>Simplify</b> life with words, with Us."
                     ],
@@ -37,11 +36,11 @@ tim.index.ready = function() {
                 setTimeout(function() {
                     $library.transition('scale in', 1000);
                     $logo.transition('fade', 5000);
-                }, 24500);
+                }, 16500);
                 
                 setTimeout(function() {
                     $version.transition('fade', 1000);
-                }, 25100);
+                }, 17100);
             }
         };
     
