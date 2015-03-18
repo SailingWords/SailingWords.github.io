@@ -1,6 +1,7 @@
 @media only screen and (max-width: 992px) {
   html {
     overflow-x: visible;
+	
     -webkit-overflow-scrolling: auto;
   }
 }
@@ -11,7 +12,9 @@
 
 body#tim {
   background: #2C2C2C !important;
-}
+	overflow-y: scroll;
+	
+  }
 
 #tim .masthead .grid {
   position: relative;
@@ -26,7 +29,8 @@ body#tim {
   display: table-cell;
   vertical-align: top;
   width: 100%;
-}
+	position: relative;
+  }
 
 #tim.index .masthead {
   height: 100%;
@@ -139,14 +143,14 @@ body#tim {
   font-size: 1.5em;
   margin: 1em 0em 1em;
   padding: 0px;
-}
+
+  }
 
 #tim.index .introduction {
   position: relative;
   clear: both;
   display: block;
   text-align: center;
-  margin-top: 5%;
 }
 
 #tim.index .introduction .input {
@@ -159,17 +163,14 @@ body#tim {
 
 #tim .masthead .version.label:after {
   background-color: #000000 !important;
-}
+
+  }
 
 #tim.index .following .version.label {
   margin: 0.25em 0px 0px 1em;
 }
 
 #tim.index .introduction .version.label {
-  visibility: hidden;
-}
-
-#tim.index .introduction .logo {
   visibility: hidden;
 }
 
@@ -196,4 +197,43 @@ body#tim {
     #tim.index .masthead.segment h1 {
         font-size: 2.25em;
     }
+}
+
+#tim.index .introduction .logo {
+  position: relative;
+}
+
+.right {
+	float:right;
+	margin-top:0px;
+}
+
+#tim.index .introduction .container { 
+  display: block; 
+  visibility: hidden;
+  position: relative; 
+  max-width: 1000px; 
+  min-width: 550px; 
+  margin: 0 auto; 
+}
+
+#left { 
+  width: 220px;  
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  height: 100%; 
+}
+
+#content { 
+  width: 100%;  
+  padding: 0px 220px; 
+}
+
+#right { 
+  width: 220px; 
+  position: absolute; 
+  right: 0; 
+  top: 0; 
+  height: 100%; 
 }

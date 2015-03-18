@@ -9,7 +9,7 @@ tim.index.ready = function() {
         $ui         = $header.find('.typer'),
         $library    = $header.find('.library'),
         $version    = $header.find('.version'),
-        $logo       = $header.find('.logo'),
+        $logo       = $header.find('.container'),
         handler     = {
             introduction: function() {
                 // zoom out
