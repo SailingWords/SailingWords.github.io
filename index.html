@@ -9,7 +9,7 @@
         <!-- Site Properties -->
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
         <meta name="description" content="SailingWords" />
-        <meta name="keywords" content="academic, books, question papers, engineering, medical" />
+        <meta name="keywords" content="sailing, words, inspiration, motivation, life, love" />
     
         <title>Sailing Words - Launching Soon</title>
         
@@ -18,12 +18,34 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">    
     </head>
     
-    <body id="tim" class="index" ontouchstart="">        
-        <div class="zoomed masthead segment">
+    <body id="tim" class="index" ontouchstart="">
+
+       <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+
+		<div class="zoomed masthead segment">
+		
             <div class="ui page grid">
-                <div class="column">    
+				<div class="column"> 
+
+                    <div class="social-follow">
+                       <div class="fb-follow" data-href="https://www.facebook.com/SailingWords" data-colorscheme="light" data-layout="button_count" data-show-faces="false"></div>
+                       
+                       <a href="https://twitter.com/SailinWords" class="twitter-follow-button" data-show-count="true" data-size="large" data-show-screen-name="false">Follow @SailinWords</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                       
+                       <div class="g-follow" data-href="https://plus.google.com/104913800001896111044" data-rel="publisher"></div>
+                    </div>
+
                     <div class="introduction">
-                        <a class="ui black version label" href="http://www.divyananda.me">
+					   <a class="ui black version label" href="http://www.divyananda.me">
                             Coming Soon
                         </a>
                     
@@ -34,8 +56,6 @@
                             <span class="typer"></span>
                             <span class="typed-cursor">|</span>
                         </h1>
-
-                        <div class="ui hidden divider"></div>
                         
                         <div class="ui center aligned page grid">
                             <div class="column">
@@ -52,12 +72,28 @@
                                         </div>
                                     </form>
                                 </div>
+							
+                           <!--  <p>
+                                Spread the word  	
+    							<a class="ui circular facebook icon button" href="http://www.facebook.com/share.php?u=http://www.facebook.com/share.php?u=http://www.sailingwords.com" >
+    							  <i class="facebook icon"></i>
+    							</a>
+    							<a class="ui circular twitter icon button" 
+    							href="https://twitter.com/SailinWords"  </a>							
+    							  <i class="twitter icon"></i>
+    							</a>
+    							<a class="ui circular google plus icon button" href="https://plusone.google.com/_/+1/confirm?hl=en&url=http%3A%2F%2F%20http://www.sailingwords.com">
+    							  <i class="google plus icon"></i>
+    							</a>
+                            </p> -->
+								
                             </div>
+					
                         </div>
-
-                        <div class="logo">
-                            <img src="images/logo.png"/>
-                        </div>
+  
+              		    <div class="logo">
+                           <img src="images/logo.png"/>
+            	        </div>
                     </div>
                 </div>
             </div>
@@ -78,5 +114,7 @@
         <script src="js/lib/typed.js"></script>
         <script src="js/common.js"></script>
         <script src="js/index.js"></script>
+
+        <script src="https://apis.google.com/js/platform.js" async defer></script> 
     </body>
 </html>
