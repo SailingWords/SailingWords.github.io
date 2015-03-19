@@ -237,3 +237,7 @@ body#tim {
   top: 0; 
   height: 100%; 
 }
+
+.social-follow {
+	z-index: 999;
+}
