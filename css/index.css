@@ -1,20 +1,10 @@
-@media only screen and (max-width: 992px) {
-  html {
-    overflow-x: visible;
-	
-    -webkit-overflow-scrolling: auto;
-  }
-}
-
 /*
  * MASTHEAD
  */
-
 body#tim {
   background: #2C2C2C !important;
 	overflow-y: scroll;
-	
-  }
+}
 
 #tim .masthead .grid {
   position: relative;
@@ -30,7 +20,7 @@ body#tim {
   vertical-align: top;
   width: 100%;
 	position: relative;
-  }
+}
 
 #tim.index .masthead {
   height: 100%;
@@ -143,8 +133,7 @@ body#tim {
   font-size: 1.5em;
   margin: 1em 0em 1em;
   padding: 0px;
-
-  }
+}
 
 #tim.index .introduction {
   position: relative;
@@ -172,31 +161,6 @@ body#tim {
 
 #tim.index .introduction .version.label {
   visibility: hidden;
-}
-
-@media only screen and (max-width : 400px) {
-  #tim.index .masthead.segment h1 > .library {
-    font-size: 1.5em;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  
-    #tim.index .masthead.segment h1 .text {
-        margin-left: 0em;
-    }
-    
-    #tim.index .masthead:before {
-        display: none;
-    }
-    
-    #tim .masthead .grid {
-        padding: 6rem 0rem;
-    }
-    
-    #tim.index .masthead.segment h1 {
-        font-size: 2.25em;
-    }
 }
 
 #tim.index .introduction .logo {
@@ -240,4 +204,264 @@ body#tim {
 
 .social-follow {
 	z-index: 999;
+}
+
+.mobile-contact-us {
+  visibility: hidden;
+}
+
+.mobile-contact-us a {
+  color: #a89595;
+}
+
+@media only screen and (min-device-width : 213px) and (max-device-width : 320px) {
+  
+  #tim .introduction {
+    width: 200px;
+  }
+
+  #tim.index .introduction .input {
+    width: 150px;
+    height: 50px;
+  }
+
+  #tim.index .masthead.segment h1 {
+    font-size: 1.3em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .masthead.segment h1 > .library {
+    font-size: 1.0em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .masthead.segment h1 .typer {
+    font-size: 0.8em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .introduction p {
+    font-size: 12px;
+  }
+
+  #tim.index .introduction .container, #left, #right, #content { 
+    display: none; 
+  }
+
+  #tim.index .version.label {
+    margin: 0.25em 0px 1px 0em;
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+  .ui.huge.input input {
+    font-size: 18px;
+    line-height: 18px;
+    height: 36px;
+  }
+
+  .ui.huge.input button {
+    font-size: 18px;
+    line-height: 18px;
+    height: 36px; 
+  }
+
+  .mobile-contact-us {
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
+  #tim .introduction {
+    width: 280px;
+  }
+
+  #tim.index .introduction .input {
+    width: 250px;
+    height: 60px;
+  }
+
+  #tim.index .masthead.segment h1 {
+    font-size: 1.8em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .masthead.segment h1 > .library {
+    font-size: 1.45em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .masthead.segment h1 .typer {
+    font-size: 1.0em;
+    line-height: 0.9em;
+  }
+
+  #tim.index .introduction p {
+    font-size: 15px;
+  }
+
+  #tim.index .introduction .container, #left, #right, #content { 
+    display: none; 
+  }
+
+  .mobile-contact-us {
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+  
+  #tim .introduction {
+    width: 330px;
+  }
+
+  #tim.index .introduction .input {
+    width: 300px;
+    height: 70px;
+  }
+
+  #tim.index .masthead.segment h1 {
+    font-size: 1.7em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .masthead.segment h1 > .library {
+    font-size: 1.9em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .masthead.segment h1 .typer {
+    font-size: 1.3em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .introduction p {
+    font-size: 22px;
+  }
+
+  #tim.index .introduction .container, #left, #right, #content { 
+    display: none; 
+  }
+
+  .mobile-contact-us {
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+  
+  #tim .introduction {
+    width: 355px;
+  }
+
+  #tim.index .introduction .input {
+    width: 300px;
+    height: 80px;
+  }
+
+  #tim.index .masthead.segment h1 {
+    font-size: 1.8em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .masthead.segment h1 > .library {
+    font-size: 1.8em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .masthead.segment h1 .typer {
+    font-size: 1.2em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .introduction p {
+    font-size: 20px;
+  }
+
+  #tim.index .introduction .container, #left, #right, #content {
+    display: none; 
+  }
+
+  .mobile-contact-us {
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+  
+  #tim .introduction {
+    width: 400px;
+  }
+
+  #tim.index .introduction .input {
+    width: 300px;
+    height: 70px;
+  }
+
+  #tim.index .masthead.segment h1 {
+    font-size: 1.8em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .masthead.segment h1 > .library {
+    font-size: 2.0em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .masthead.segment h1 .typer {
+    font-size: 1.4em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .introduction p {
+    font-size: 23px;
+  }
+
+  #tim.index .introduction .container, #left, #right, #content { 
+    display: none; 
+  }
+
+  .mobile-contact-us {
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-device-width : 424px) and (max-device-width : 753px) {
+  
+  #tim .introduction {
+    width: 400px;
+  }
+
+  #tim.index .introduction .input {
+    width: 300px;
+    height: 70px;
+  }
+
+  #tim.index .masthead.segment h1 {
+    font-size: 1.5em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .masthead.segment h1 > .library {
+    font-size: 1.8em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .masthead.segment h1 .typer {
+    font-size: 1.3em;
+    line-height: 1.0em;
+  }
+
+  #tim.index .introduction p {
+    font-size: 22px;
+  }
+
+  #tim.index .introduction .container, #left, #right, #content { 
+    display: none; 
+  }
+
+  .mobile-contact-us {
+    visibility: visible;
+  }
 }
