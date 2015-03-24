@@ -1,3 +1,10 @@
+@media only screen and (max-width: 992px) {
+  html {
+    overflow-x: visible; 
+    -webkit-overflow-scrolling: auto;
+  }
+}
+
 /*
  * MASTHEAD
  */
@@ -207,14 +214,16 @@ body#tim {
 }
 
 .mobile-contact-us {
-  visibility: hidden;
+  /*visibility: hidden;*/
+  margin-top: 25px;
+  color: #cccccc;
 }
 
 .mobile-contact-us a {
-  color: #a89595;
+  color: #ffffff;
 }
 
-@media only screen and (min-device-width : 213px) and (max-device-width : 320px) {
+@media only screen and (min-device-width : 213px) and (max-device-width : 319px) {
   
   #tim .introduction {
     width: 200px;
@@ -271,7 +280,7 @@ body#tim {
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 359px) {
   
   #tim .introduction {
     width: 280px;
@@ -310,7 +319,7 @@ body#tim {
   }
 }
 
-@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+@media only screen and (min-device-width : 360px) and (max-device-width : 374px) {
   
   #tim .introduction {
     width: 330px;
@@ -349,7 +358,7 @@ body#tim {
   }
 }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+@media only screen and (min-device-width : 375px) and (max-device-width : 413px) {
   
   #tim .introduction {
     width: 355px;
@@ -388,7 +397,7 @@ body#tim {
   }
 }
 
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+@media only screen and (min-device-width : 414px) and (max-device-width : 423px) {
   
   #tim .introduction {
     width: 400px;
@@ -427,7 +436,7 @@ body#tim {
   }
 }
 
-@media only screen and (min-device-width : 424px) and (max-device-width : 753px) {
+@media only screen and (min-device-width : 424px) and (max-device-width : 599px) {
   
   #tim .introduction {
     width: 400px;
