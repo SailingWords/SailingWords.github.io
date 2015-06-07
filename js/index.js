@@ -10,8 +10,8 @@ tim.index.ready = function() {
         slide_speed: 800,
         pagination: false,
         hashchange: false,
-        scrollable: true//,
-        //play: 5000
+        scrollable: true,
+        play: 7000
     });
 
     $('#testimonial-slides').superslides({
