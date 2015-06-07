@@ -1,61 +1,49 @@
+#tim.index .pusher > .page {
+  background-color: #FFFFFF;
+}
+
 @media only screen and (max-width: 992px) {
   html {
-    overflow-x: visible; 
+    overflow-x: visible;
     -webkit-overflow-scrolling: auto;
   }
+}
+
+#tim > .pusher {
+  display: block;
+  flex-direction: initial;
+}
+
+#tim > .pusher > .full.height {
+  flex: none !important;
+}
+
+#tim.index .vertical.segment {
+    box-shadow: none;
+}
+
+#tim .stripe {
+    padding: 10em 0px;
+    border-radius: 0em;
+    margin: 0em;
+}
+
+#tim .alternate.stripe {
+    background-color: #F2F3F5;
 }
 
 /*
  * MASTHEAD
  */
+
 body#tim {
   background: #2C2C2C !important;
-	overflow-y: scroll;
-}
-
-#tim .masthead .grid {
-  position: relative;
-  z-index: 2;
-}
-
-#tim .masthead .column {
-  display: table;
-}
-
-#tim .introduction {
-  display: table-cell;
-  vertical-align: top;
-  width: 100%;
-	position: relative;
 }
 
 #tim.index .masthead {
-  height: 100%;
   position: relative;
   overflow: hidden;
   text-align: center;
-  padding: 0em;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 0px;
-  border-bottom: none;
-
-  background-color: #49b4e0;
-  background-position: 50% 50%;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-
-  -ms-transition: background-color 3s ease-in-out 1s;
-  -moz-transition: background-color 3s ease-in-out 1s;
-  -webkit-transition: background-color 3s ease-in-out 1s;
-  transition: background-color 3s ease-in-out 1s;
-}
-
-#tim.index .masthead.zoomed {
-  background-color: #555555;
-}
-
-#tim .masthead .grid {
-  margin: 0em;
 }
 
 #tim.index.pushed .masthead {
@@ -64,413 +52,254 @@ body#tim {
   transform: translate3d(0, 0, 0);
 }
 
-#tim.index .masthead.segment h1 {
-  font-size: 3em;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.2;
-  margin: 0px 0px 0px;
-  padding-bottom: 0px;
-  -moz-perspective: 500px;
-  -webkit-perspective: 500px;
-  perspective: 500px;
-  -moz-transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+/*
+ * FOLLOWING BAR
+ */
+
+#tim.index.pushed .following.bar {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
-#tim.index .masthead.segment h1 > .library {
-  visibility: hidden;
-  font-family: 'Dancing Script', cursive;
-  display: block;
-  font-size: 1.75em;
-  line-height: 1em;
-  color: #FFFFFF;
+#tim.index .fixed.following.bar {
+  background-image: none;
+}
+
+#tim.index .fixed.following.bar {
+  position: fixed;
+  top: 0px;
+  padding: 1em 0em;
+  background-color: #FFFFFF;
+}
+
+#tim.index .fixed.light.following.bar {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.04);
+}
+
+#tim.index .following.bar {
+  position: absolute;
+  top: 0px;
+  z-index: 900;
+  left: 0%;
+  padding: 2em 0em;
+  width: 100%;
+  box-shadow: 0px 0px 0px 0px transparent;
+  /*border-bottom: 1px solid transparent;*/
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.4) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0.4)));
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.4) 100%);
+  background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.4) 100%);
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.4) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#66000000',GradientType=0 );
+  transition:
+    padding 0.5s ease,
+    background 0.5s ease,
+    box-shadow 0.5s ease,
+    border 0.5s ease
+  ;
+}
+
+#tim.index .following.bar > .menu .item {
+  transition: all 0.5s ease;
+}
+
+#tim.index.pushed .following.bar .menu .item,
+#tim.index.pushed .following.bar {
+  transition: none;
+}
+
+#tim.index .following.bar .additional.item {
+  display: none;
+}
+
+#tim.index .following.bar .column > .menu {
+  margin-top: 0px;
+  height: 35px;
   font-weight: bold;
 }
 
-#tim.index .masthead.segment h1 b {
-  display: inline-block;
-  font-weight: 300;
-  color: #FFFFFF;
+#tim.index .following .logo {
+  float: left;
+  width: 250px;
+  margin-right: 1em;
 }
 
-#tim.index .masthead.segment h1 .text {
-  display: inline-block;
-  font-weight: 300;
-  margin-left: -0.4em;
+#tim.index .following .logo a {
+  font-family: 'Dancing Script', cursive, Georgia, Times, serif;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 40px;
+  color: white;
 }
 
-#tim.index .masthead h2 {
-  font-weight: normal;
-  margin: 0px 0 16px 0px;
-  font-size: 1.75em;
-  border-bottom: none;
-  line-height: 1;
+#tim.index .following.fixed .logo a {
+  color: #49B4E0; 
 }
 
-#tim.index .masthead.segment .typed-cursor {
-  position: relative;
-  top: -0.05em;
-  left: -0.25em;
-  opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
+/*
+ * Stripes
+ */
+
+#tim.index .about.stripe {
+    border-top: 1px solid #DDDDDD;
+    padding: 4em 0em 4em 0em;
 }
 
-@keyframes blink {
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
+#tim.index .testinomials.stripe {
+    border-top: 1px solid #DDDDDD;
+    padding: 2em 0em 2em 0em;
 }
 
-@-webkit-keyframes blink {
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
+#tim.index .inspiration.stripe {
+    border-top: 1px solid #DDDDDD;
+    padding: 4em 0em 4em 0em;
 }
 
-@-moz-keyframes blink {
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
+#tim.index .latest.stripe {
+    border-top: 1px solid #DDDDDD;
+    padding: 4em 0em 4em 0em;
 }
 
-#tim.index .masthead p {
-  font-size: 1.5em;
-  margin: 1em 0em 1em;
-  padding: 0px;
+#tim.index .email.stripe {
+    border-top: 1px solid #DDDDDD;
+    padding: 2em 0em;
 }
 
-#tim.index .introduction {
-  position: relative;
-  clear: both;
-  display: block;
-  text-align: center;
+#tim.index .ui.header {
+    font-weight: normal;
 }
 
-#tim.index .introduction .input {
-    width: 350px;
-}
-
-#tim.index .introduction .buttons {
-  margin-top: 3em;
-}
-
-#tim .masthead .version.label:after {
-  background-color: #000000 !important;
-
-  }
-
-#tim.index .following .version.label {
-  margin: 0.25em 0px 0px 1em;
-}
-
-#tim.index .introduction .version.label {
-  visibility: hidden;
-}
-
-#tim.index .introduction .logo {
-  position: relative;
-}
-
-.right {
-	float:right;
-	margin-top:0px;
-}
-
-#tim.index .introduction .container { 
-  display: block; 
-  visibility: hidden;
-  position: relative; 
-  max-width: 1000px; 
-  min-width: 550px; 
-  margin: 0 auto; 
-}
-
-#left { 
-  width: 220px;  
-  position: absolute; 
-  left: 0; 
-  top: 0; 
-  height: 100%; 
-}
-
-#content { 
-  width: 100%;  
-  padding: 0px 220px; 
-}
-
-#right { 
-  width: 220px; 
-  position: absolute; 
-  right: 0; 
-  top: 0; 
-  height: 100%; 
-}
-
-.social-follow {
-	z-index: 999;
-}
-
-.mobile-contact-us {
-  /*visibility: hidden;*/
-  margin-top: 25px;
-  color: #cccccc;
-}
-
-.mobile-contact-us a {
-  color: #ffffff;
-}
-
-@media only screen and (min-device-width : 213px) and (max-device-width : 319px) {
-  
-  #tim .introduction {
-    width: 200px;
-  }
-
-  #tim.index .introduction .input {
-    width: 150px;
-    height: 50px;
-  }
-
-  #tim.index .masthead.segment h1 {
-    font-size: 1.3em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .masthead.segment h1 > .library {
-    font-size: 1.0em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .masthead.segment h1 .typer {
-    font-size: 0.8em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .introduction p {
-    font-size: 12px;
-  }
-
-  #tim.index .introduction .container, #left, #right, #content { 
-    display: none; 
-  }
-
-  #tim.index .version.label {
-    margin: 0.25em 0px 1px 0em;
-    font-size: 8px;
-    line-height: 8px;
-  }
-
-  .ui.huge.input input {
-    font-size: 18px;
-    line-height: 18px;
-    height: 36px;
-  }
-
-  .ui.huge.input button {
-    font-size: 18px;
-    line-height: 18px;
-    height: 36px; 
-  }
-
-  .mobile-contact-us {
-    visibility: visible;
-  }
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 359px) {
-  
-  #tim .introduction {
-    width: 280px;
-  }
-
-  #tim.index .introduction .input {
-    width: 250px;
-    height: 60px;
-  }
-
-  #tim.index .masthead.segment h1 {
-    font-size: 1.8em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .masthead.segment h1 > .library {
-    font-size: 1.45em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .masthead.segment h1 .typer {
-    font-size: 1.0em;
-    line-height: 0.9em;
-  }
-
-  #tim.index .introduction p {
-    font-size: 15px;
-  }
-
-  #tim.index .introduction .container, #left, #right, #content { 
-    display: none; 
-  }
-
-  .mobile-contact-us {
-    visibility: visible;
-  }
-}
-
-@media only screen and (min-device-width : 360px) and (max-device-width : 374px) {
-  
-  #tim .introduction {
-    width: 330px;
-  }
-
-  #tim.index .introduction .input {
-    width: 300px;
-    height: 70px;
-  }
-
-  #tim.index .masthead.segment h1 {
-    font-size: 1.7em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .masthead.segment h1 > .library {
-    font-size: 1.9em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .masthead.segment h1 .typer {
-    font-size: 1.3em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .introduction p {
-    font-size: 22px;
-  }
-
-  #tim.index .introduction .container, #left, #right, #content { 
-    display: none; 
-  }
-
-  .mobile-contact-us {
-    visibility: visible;
-  }
-}
-
-@media only screen and (min-device-width : 375px) and (max-device-width : 413px) {
-  
-  #tim .introduction {
-    width: 355px;
-  }
-
-  #tim.index .introduction .input {
-    width: 300px;
-    height: 80px;
-  }
-
-  #tim.index .masthead.segment h1 {
-    font-size: 1.8em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .masthead.segment h1 > .library {
-    font-size: 1.8em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .masthead.segment h1 .typer {
-    font-size: 1.2em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .introduction p {
+#tim .stripe h3 {
     font-size: 20px;
+}
+
+#tim.index .email.stripe .input {
+    width: 450px;
+}
+
+@media only screen and (max-width : 600px) {
+      
+    #tim.index .following.bar {
+        display: none;
+    }
+  
+    #tim.index .following.bar .column {
+        text-align: center;
+    }
+  
+    #tim.index .following .logo {
+        float: none;
+    }
+
+    #tim.index .email.stripe .input {
+      width: 350px;
+    }
+}
+
+@media only screen and (max-width : 810px) {
+  #tim.index .container {
+    margin-left: 2em;
+    margin-right: 2em;
   }
 
-  #tim.index .introduction .container, #left, #right, #content {
-    display: none; 
-  }
-
-  .mobile-contact-us {
-    visibility: visible;
+  #tim.index .email.stripe .input {
+    width: 400px;
   }
 }
 
-@media only screen and (min-device-width : 414px) and (max-device-width : 423px) {
-  
-  #tim .introduction {
-    width: 400px;
-  }
-
-  #tim.index .introduction .input {
-    width: 300px;
-    height: 70px;
-  }
-
-  #tim.index .masthead.segment h1 {
-    font-size: 1.8em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .masthead.segment h1 > .library {
-    font-size: 2.0em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .masthead.segment h1 .typer {
-    font-size: 1.4em;
-    line-height: 1.0em;
-  }
-
-  #tim.index .introduction p {
-    font-size: 23px;
-  }
-
-  #tim.index .introduction .container, #left, #right, #content { 
-    display: none; 
-  }
-
-  .mobile-contact-us {
-    visibility: visible;
+@media only screen and (max-width : 350px) {
+  #tim.index .email.stripe .input {
+    width: 150px;
   }
 }
 
-@media only screen and (min-device-width : 424px) and (max-device-width : 599px) {
-  
-  #tim .introduction {
-    width: 400px;
-  }
+/* SLIDES
+*/
 
-  #tim.index .introduction .input {
-    width: 300px;
-    height: 70px;
-  }
+#slides .designOne {
+  background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.1) 90%, rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(90%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.1) 90%,rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.1) 90%,rgba(255,255,255,0) 100%);
+  background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.1) 90%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.1) 90%,rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+}
 
-  #tim.index .masthead.segment h1 {
-    font-size: 1.5em;
-    line-height: 1.0em;
-  }
+.padding-top-ten {
+  padding-top: 10%;
+}
 
-  #tim.index .masthead.segment h1 > .library {
-    font-size: 1.8em;
-    line-height: 1.0em;
-  }
+.padding-top-twenty {
+  padding-top: 20%;  
+}
 
-  #tim.index .masthead.segment h1 .typer {
-    font-size: 1.3em;
-    line-height: 1.0em;
-  }
+.padding-top-thirty {
+  padding-top: 30%;  
+}
 
-  #tim.index .introduction p {
-    font-size: 22px;
-  }
+.padding-top-forty {
+  padding-top: 40%;  
+}
 
-  #tim.index .introduction .container, #left, #right, #content { 
-    display: none; 
-  }
+.padding-top-fifty {
+  padding-top: 50%;  
+}
 
-  .mobile-contact-us {
-    visibility: visible;
-  }
+.padding-top-sixty {
+  padding-top: 60%;  
+}
+
+.padding-top-seventy {
+  padding-top: 70%;  
+}
+
+/*
+ * Sections
+ */
+#tim.index .stripe h1 {
+  font-family: 'Dancing Script', cursive, Georgia, Times, serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 38px;
+}
+
+#tim.index .stripe h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 25px;
+}
+
+#tim.index .stripe p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+#tim.index .about p, #tim.index .testinomials p {
+  color: #827a7a;
+}
+
+#tim.index .testinomials p {
+  font-size: 16px; 
+  line-height: 20px;
+}
+
+#tim.index .inspiration .quotation {
+  font-family: 'Dancing Script', cursive, Georgia, Times, serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+#tim.index .inspiration .author {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  font-size: 22px;
 }
